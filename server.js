@@ -11,6 +11,10 @@ app.get('/about', (req, res) => {
     res.send('<h1>About Page </h1><p> Its me! </p>');
 });
 
+app.get('/contact', (req, res) => {
+    res.send('<h1>Contact Page </h1><p> Email: evan.johnson@berkeley.edu </p>');
+});
+
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
